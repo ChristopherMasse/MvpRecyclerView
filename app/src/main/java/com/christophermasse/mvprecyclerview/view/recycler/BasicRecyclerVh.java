@@ -1,21 +1,27 @@
-package com.christophermasse.mvprecyclerview.recycler.common;
+package com.christophermasse.mvprecyclerview.view.recycler;
 
 import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.christophermasse.mvprecyclerview.presenter.ItemClickListener;
+import com.christophermasse.mvprecyclerview.viewholder.ItemClickListener;
+import com.christophermasse.mvprecyclerview.viewholder.Bindable;
 
 /**
- * Optional decorated ViewHolder class to ensure that the Bindable.Presenter is included during construction
+ * Optional decorated ViewHolder class to ensure that the Bindable. Presenter is included during construction
  *
  */
-public abstract class BasicViewholder extends RecyclerView.ViewHolder {
+public abstract class BasicRecyclerVh extends RecyclerView.ViewHolder {
 
     private final Bindable.Presenter mPresenter;
 
     private static final boolean FORCE_ITEM_CLICK_LISTENER = true;
 
-    public BasicViewholder(@NonNull View itemView, @NonNull final Bindable.Presenter mPresenter) {
+    /**
+     *
+     * @param itemView Android View object inflated by adapter
+     * @param mPresenter Presenter in MVP architecture that will handle view binding
+     */
+    public BasicRecyclerVh(@NonNull View itemView, @NonNull final Bindable.Presenter mPresenter) {
         super(itemView);
         if (mPresenter == null) {
             throw new NullPointerException("Null instance of " + Bindable.Presenter.class.getSimpleName() +

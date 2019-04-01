@@ -1,4 +1,4 @@
-package com.christophermasse.mvprecyclerview.recycler;
+package com.christophermasse.mvprecyclerview.view.recycler;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -6,9 +6,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.christophermasse.mvprecyclerview.R;
-import com.christophermasse.mvprecyclerview.recycler.common.Bindable;
-import com.christophermasse.mvprecyclerview.recycler.viewholder.CatRecyclerVh;
-import com.christophermasse.mvprecyclerview.recycler.viewholder.DogRecyclerVh;
+import com.christophermasse.mvprecyclerview.view.recycler.vh_impl.CatRecyclerVh;
+import com.christophermasse.mvprecyclerview.view.recycler.vh_impl.DogRecyclerVh;
+import com.christophermasse.mvprecyclerview.viewholder.Bindable;
 
 public class PetListAdapter extends RecyclerView.Adapter {
 

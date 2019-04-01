@@ -5,12 +5,13 @@ import com.christophermasse.mvprecyclerview.PetListMvp;
 import com.christophermasse.mvprecyclerview.model.PetRepo;
 import com.christophermasse.mvprecyclerview.model.entity.Dog;
 import com.christophermasse.mvprecyclerview.model.entity.Pet;
-import com.christophermasse.mvprecyclerview.recycler.common.Bindable;
+import com.christophermasse.mvprecyclerview.viewholder.ItemClickListener;
+import com.christophermasse.mvprecyclerview.viewholder.Bindable;
 
 import java.util.List;
 
-import static com.christophermasse.mvprecyclerview.recycler.common.Bindable.Viewholder.CAT_VH;
-import static com.christophermasse.mvprecyclerview.recycler.common.Bindable.Viewholder.DOG_VH;
+import static com.christophermasse.mvprecyclerview.viewholder.Bindable.Viewholder.CAT_VH;
+import static com.christophermasse.mvprecyclerview.viewholder.Bindable.Viewholder.DOG_VH;
 
 public class PetListPresenter implements PetListMvp.Presenter, Bindable.Presenter, ItemClickListener {
 

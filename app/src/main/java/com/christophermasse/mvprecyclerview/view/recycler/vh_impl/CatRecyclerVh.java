@@ -1,14 +1,14 @@
-package com.christophermasse.mvprecyclerview.recycler.viewholder;
+package com.christophermasse.mvprecyclerview.view.recycler.vh_impl;
 
 import android.view.View;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import com.christophermasse.mvprecyclerview.R;
 import com.christophermasse.mvprecyclerview.model.entity.Cat;
-import com.christophermasse.mvprecyclerview.recycler.common.BasicViewholder;
-import com.christophermasse.mvprecyclerview.recycler.common.Bindable;
+import com.christophermasse.mvprecyclerview.view.recycler.BasicRecyclerVh;
+import com.christophermasse.mvprecyclerview.viewholder.Bindable;
 
-public class CatRecyclerVh extends BasicViewholder implements Bindable.Viewholder<Cat> {
+public class CatRecyclerVh extends BasicRecyclerVh implements Bindable.Viewholder<Cat> {
 
     private TextView nameTextView;
 
@@ -33,7 +33,8 @@ public class CatRecyclerVh extends BasicViewholder implements Bindable.Viewholde
         String s = String.valueOf(cat.getName().charAt(0));
         initials.setText(s);
         breedTextView.setText(cat.getBreed());
-        ageTextView.setText(String.valueOf(cat.getAge()) + " YO");
+        String ageText = String.valueOf(cat.getAge()) + " YO";
+        ageTextView.setText(ageText);
         initials.setBackgroundResource(cat.getToyColor());
     }
 

@@ -2,13 +2,13 @@ package com.christophermasse.mvprecyclerview.model.entity;
 
 public abstract class Pet {
 
-    protected int toyColor;
-
     protected String name;
 
     protected int age;
 
     protected String breed;
+
+    protected int toyColor;
 
     public String getName() {
         return name;

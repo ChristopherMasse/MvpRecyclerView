@@ -1,4 +1,4 @@
-package com.christophermasse.mvprecyclerview.recycler.common;
+package com.christophermasse.mvprecyclerview.viewholder;
 
 import androidx.annotation.NonNull;
 

@@ -20,7 +20,4 @@ public interface PetListMvp {
 
         void destroy();
     }
-
-
-
 }

@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.christophermasse.mvprecyclerview.PetListMvp;
 import com.christophermasse.mvprecyclerview.R;
 import com.christophermasse.mvprecyclerview.presenter.PetListPresenter;
-import com.christophermasse.mvprecyclerview.recycler.PetListAdapter;
+import com.christophermasse.mvprecyclerview.view.recycler.PetListAdapter;
 
 public class PetListFrag extends Fragment implements PetListMvp.View {
 
