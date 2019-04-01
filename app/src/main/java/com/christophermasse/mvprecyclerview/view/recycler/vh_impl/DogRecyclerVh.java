@@ -6,7 +6,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import com.christophermasse.mvprecyclerview.R;
 import com.christophermasse.mvprecyclerview.model.entity.Dog;
-import com.christophermasse.mvprecyclerview.view.recycler.BasicRecyclerVh;
 import com.christophermasse.mvprecyclerview.viewholder.Bindable;
 import com.christophermasse.mvprecyclerview.viewholder.DogViewHolder;
 

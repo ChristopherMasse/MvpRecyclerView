@@ -1,12 +1,10 @@
-package com.christophermasse.mvprecyclerview.view.recycler;
+package com.christophermasse.mvprecyclerview.view.recycler.vh_impl;
 
 import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.christophermasse.mvprecyclerview.viewholder.ItemClickListener;
 import com.christophermasse.mvprecyclerview.viewholder.Bindable;
-import com.christophermasse.mvprecyclerview.view.recycler.vh_impl.CatRecyclerVh;
-import com.christophermasse.mvprecyclerview.view.recycler.vh_impl.DogRecyclerVh;
+import com.christophermasse.mvprecyclerview.viewholder.ItemClickListener;
 
 /**
  * Optional decorated ViewHolder class to ensure that the {@link Bindable.Presenter} is included during construction
