@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MvpRecyclerView</string>
+    <string name="dogpaw">dogPaw</string>
 </resources>

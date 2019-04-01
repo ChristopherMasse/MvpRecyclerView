@@ -15,13 +15,19 @@ import com.christophermasse.mvprecyclerview.R;
 import com.christophermasse.mvprecyclerview.presenter.PetListPresenter;
 import com.christophermasse.mvprecyclerview.view.recycler.PetListAdapter;
 
+/**
+ * Implementation of View within MVP pattern
+ *
+ * Displays a list of pets (dogs and cats) and their basic information within a RecyclerView
+ */
+
 public class PetListFrag extends Fragment implements PetListMvp.View {
 
     private RecyclerView mRecyclerView;
 
     private PetListPresenter mPresenter;
 
-    public static PetListFrag newInstance() {
+    static PetListFrag newInstance() {
         Bundle args = new Bundle();
         PetListFrag fragment = new PetListFrag();
         fragment.setArguments(args);
@@ -48,8 +54,20 @@ public class PetListFrag extends Fragment implements PetListMvp.View {
     }
 
     @Override
+    public void onPause() {
+        super.onPause();
+        mPresenter.pause();
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        mPresenter.destroy();
+    }
+
+    @Override
     public boolean isActive() {
-        return isAdded() && isVisible();
+        return isVisible();
     }
 
     @Override

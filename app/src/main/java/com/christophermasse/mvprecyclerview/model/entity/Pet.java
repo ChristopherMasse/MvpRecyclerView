@@ -1,14 +1,20 @@
 package com.christophermasse.mvprecyclerview.model.entity;
 
-public abstract class Pet {
+import java.io.Serializable;
+
+/**
+ * Simple pojo to be used to form a list of objects that will be stored in the {@link com.christophermasse.mvprecyclerview.model.PetRepo}
+ * repo and displayed within the RecyclerView
+ */
+public abstract class Pet implements Serializable {
 
     protected String name;
 
-    protected int age;
+    private int age;
 
-    protected String breed;
+    private String breed;
 
-    protected int toyColor;
+    private int toyColor;
 
     public String getName() {
         return name;

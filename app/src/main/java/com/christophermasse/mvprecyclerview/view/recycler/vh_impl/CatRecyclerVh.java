@@ -4,11 +4,11 @@ import android.view.View;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import com.christophermasse.mvprecyclerview.R;
-import com.christophermasse.mvprecyclerview.model.entity.Cat;
 import com.christophermasse.mvprecyclerview.view.recycler.BasicRecyclerVh;
 import com.christophermasse.mvprecyclerview.viewholder.Bindable;
+import com.christophermasse.mvprecyclerview.viewholder.CatViewHolder;
 
-public class CatRecyclerVh extends BasicRecyclerVh implements Bindable.Viewholder<Cat> {
+public class CatRecyclerVh extends BasicRecyclerVh implements CatViewHolder{
 
     private TextView nameTextView;
 
@@ -28,18 +28,14 @@ public class CatRecyclerVh extends BasicRecyclerVh implements Bindable.Viewholde
     }
 
     @Override
-    public void bindItem(Cat cat) {
-        nameTextView.setText(cat.getName());
-        String s = String.valueOf(cat.getName().charAt(0));
+    public void bindItem(Params item) {
+        nameTextView.setText(item.getName());
+        String s = String.valueOf(item.getName().charAt(0));
         initials.setText(s);
-        breedTextView.setText(cat.getBreed());
-        String ageText = String.valueOf(cat.getAge()) + " YO";
+        breedTextView.setText(item.getBreed());
+        String ageText = String.valueOf(item.getAge()) + " YO";
         ageTextView.setText(ageText);
-        initials.setBackgroundResource(cat.getToyColor());
+        initials.setBackgroundResource(item.getColor());
     }
 
-    @Override
-    public int getItemType() {
-        return CAT_VH;
-    }
 }

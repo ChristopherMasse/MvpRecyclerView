@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import com.christophermasse.mvprecyclerview.R;
 
+/**
+ * Single fragment activity hosting {@link PetListFrag}
+ */
 public class PetListActivity extends AppCompatActivity {
 
     @Override

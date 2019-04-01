@@ -2,19 +2,17 @@
 <androidx.cardview.widget.CardView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:background="?android:attr/selectableItemBackground"
         android:layout_margin="6dp"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
     <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="?android:attr/selectableItemBackground"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         <TextView
                 android:id="@+id/initials"
                 android:textSize="50sp"
-                android:text="N"
                 android:textColor="@color/white"
                 android:maxLength="1"
                 android:gravity="center"
@@ -29,7 +27,6 @@
 
         <TextView
                 android:id="@+id/name"
-                android:text="Name"
                 android:padding="4sp"
                 android:textSize="28sp"
                 android:layout_width="0dp"
@@ -38,11 +35,10 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/initials"
                 android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/dog_icon"/>
+                android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/paw_icon"/>
         <TextView
                 android:id="@+id/breed"
                 android:textSize="16sp"
-                android:text="Breed"
                 android:padding="4sp"
                 android:textStyle="italic"
                 android:layout_width="0dp"
@@ -57,7 +53,6 @@
         <TextView
                 android:id="@+id/age"
                 android:textSize="16sp"
-                android:text="Age"
                 android:padding="4sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -70,10 +65,10 @@
         <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp" app:srcCompat="@drawable/ic_pets_black_24dp"
-                android:id="@+id/dog_icon"
+                android:id="@+id/paw_icon"
                 android:layout_marginEnd="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="@+id/name"
-                app:layout_constraintTop_toTopOf="@+id/name"/>
+                app:layout_constraintTop_toTopOf="@+id/name" android:contentDescription="@string/dogpaw"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
