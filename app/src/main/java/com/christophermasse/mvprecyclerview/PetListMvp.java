@@ -1,11 +1,14 @@
-package com.christophermasse.mvprecyclerview.view;
+package com.christophermasse.mvprecyclerview;
 
-public interface ListMvp {
+public interface PetListMvp {
 
     interface View{
         boolean isActive();
-    }
 
+        void showList();
+
+        void showToastShort(String message);
+    }
 
     interface Presenter<T extends View>{
 
