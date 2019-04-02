@@ -7,6 +7,7 @@ Since RecyclerView requires implementation of Android’s RecyclerView .Adapter 
 Utilizing such an approach, this sample app will display a RecyclerView containing a list of pets.
 
 ### Screenshot
+![App screenshot](screenshots/screenshot.png)
 
 ### Details
 The separation of concerns between the View and Presentation layer is achieved through the use of a custom **Bindables** interface, which consists of two components:
@@ -32,7 +33,3 @@ The separation of concerns between the View and Presentation layer is achieved t
 
 By implementing these interfaces and adding a reference the Presenter in adapter class, we can manage the list of pets from the Presenter.    
 
-
-[TOCM]
-
-[TOC]
