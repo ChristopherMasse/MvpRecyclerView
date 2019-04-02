@@ -1,9 +1,9 @@
-# Model-View-Present with RecyclerView
+# Model-View-Presenter with RecyclerView
 ## Description
 
 Model-View-Presenter is a popular architectural pattern that allows for the separation of concerns within your Android code. Following the pattern, the UI will be accessed and updated through an interface in order abstract away business logic from the Android classes.
 
-Since RecyclerView requires implementation of Android’s RecyclerView .Adapter and RecyclerView.ViewHolder, business logic and models can easily become coupled to the Android libraries in violation of MVP logic. However, we can avoid this issue by utilizing interfaces to manage the RecyclerView from the presenter layer.
+Since RecyclerView requires implementation of Android’s RecyclerView.Adapter and RecyclerView.ViewHolder, business logic and models can easily become coupled to the Android libraries in violation of MVP logic. However, we can avoid this issue by utilizing interfaces to manage the RecyclerView from the presenter layer.
 
 Utilizing such an approach, this sample app will display a RecyclerView containing a list of pets.
 
