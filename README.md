@@ -8,7 +8,7 @@ Utilizing such an approach, this sample app will display a RecyclerView containi
 
 ### Screenshot
 
-<img src="screenshots/screenshot.png" align="center" width="200">
+<img src="screenshots/screenshot.png" align="left" width="400">
 
 
 ### Details
