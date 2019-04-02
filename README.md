@@ -7,7 +7,7 @@ Since RecyclerView requires implementation of Android’s RecyclerView .Adapter 
 Utilizing such an approach, this sample app will display a RecyclerView containing a list of pets.
 
 ### Screenshot
-![App screenshot](screenshots/screenshot.png)
+![App screenshot](screenshots/screenshot.png | width=200)
 
 ### Details
 The separation of concerns between the View and Presentation layer is achieved through the use of a custom **Bindables** interface, which consists of two components:
