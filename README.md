@@ -8,8 +8,8 @@ Utilizing such an approach, this sample app will display a RecyclerView containi
 
 ### Screenshot
 
-<img src="screenshots/screenshot.png" align="center" width="400">
-
+<img src="screenshots/screenshot.png" align="center" width="400"/>
+<br />
 
 ### Details
 The separation of concerns between the View and Presentation layer is achieved through the use of a custom **Bindables** interface, which consists of two components:
