@@ -13,7 +13,7 @@ Utilizing such an approach, this sample app will display a RecyclerView containi
 <br />
 
 ## Details
-The separation of concerns between the View and Presentation layer is achieved through the use of a custom **Bindables** interface, which consists of two components:
+The separation of concerns between the View and Presentation layer is achieved through the use of a custom **Bindable** interface, which consists of two components:
 
 1. **Bindable.Viewholder**- implemented by RecyclerView.ViewHolder objects in order to bind data from the Presenter to the view 
 ```java
@@ -22,7 +22,7 @@ The separation of concerns between the View and Presentation layer is achieved t
         void bindItem(T item);
     }
 ```
-2. **Bindable.Presenter**- implemented by the Presenter in MVP pattern in order to provide adapter with information on what type of ViewHolder to display and how many row items to create. By passing an reference of Bindables.Viewholder  in the onBind() method, we can avoid references to the RecyclerView.ViewHolder class within the Presenter.
+2. **Bindable.Presenter**- implemented by the Presenter in MVP pattern in order to provide adapter with information on what type of ViewHolder to display and how many row items to create. By passing an reference of Bindable.Viewholder  in the onBind() method, we can avoid references to the RecyclerView.ViewHolder class within the Presenter.
 ```java
   interface Presenter<V extends Viewholder>{
 
